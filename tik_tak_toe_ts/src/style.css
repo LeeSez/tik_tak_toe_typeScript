@@ -1,0 +1,175 @@
+/* The code is aaranged according to the html hierarchy */
+
+body{
+  margin:0;
+  overflow:hidden;
+}
+
+#topPanel {
+  width: 100vw;
+  height: 5vh;
+  min-height: 40px;
+  
+  background-color:#2C2C2C;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; 
+
+  position: absolute;
+  top: 0;
+
+  z-index: 10;
+}
+#topPanel > div{
+  margin-left:0.5vw;
+}
+
+.x{ /* styling the x of the logo and the game */ 
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.xBody{
+  width: 1.5vh;
+  height: 4vh;
+  background-color: white;
+  border-radius: 1vh;
+}
+.xLeanLeft{
+  transform: rotate(45deg);
+  position: relative;
+  left:0.75vh;
+}
+.xLeanRight{
+  transform: rotate(-45deg);
+  position: relative;
+  left:-0.75vh;
+}
+
+.o{ /* styling the circle of the logo and the game */
+  width: 1vh;
+  height: 1vh;
+  background-color: #2C2C2C;
+
+  border-radius: 50%;
+  border: 1.2vh solid white;
+}
+
+#mainContainer{
+  height: 95vh;
+  width: 100vw;
+  margin-top:5vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  font-family: 'Comfortaa', cursive;
+  font-weight: 600;
+}
+
+/*#pStartGame {
+  position: relative;
+  top: 4.5vh;
+  
+  font-size: 8vh;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  
+  cursor:context-menu;
+}
+#divStartGame{
+  position: absolute;
+}*/
+
+#gameContainer {
+  width:60vw;
+  height:80vh;
+  min-width: 300px;
+
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.player{
+  width: 50%;
+}
+
+#blueP{
+  background-color: rgba(136, 188, 216,0.3);
+  border-radius: 10vh 0 0 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blueHighlight{
+  background-color: rgba(136, 188, 216,1) !important;
+}
+
+#redP{
+  background-color: rgba(255, 101, 66,0.3);
+  border-radius: 0 10vh 10vh 0;
+}
+.redHighlight{
+  background-color: rgba(255, 101, 66,1) !important;
+}
+
+#clearRect{
+  width:35vw;
+  aspect-ratio: 1 / 1;
+  min-width: 400px;
+  min-height: 400px;
+  
+  background-color: rgba(255, 255, 255,0.5);
+  
+  position: relative;
+  left: 50%;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+
+  visibility: hidden;
+}
+.square{
+  width: 25%;
+  height: 25%;
+  margin:2%;
+  
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: grab;
+}
+.square img{
+  width: 80%;
+  height: 80%;
+}
+
+#pReplayMessage{
+  font-size: 0.7em;
+  color:#2C2C2C;
+  display: block;
+}
+
+.rain{
+  position: absolute;
+  top:5vh;
+}
+#rainContainer{
+  position: absolute;
+  top:0;
+  left:0;
+
+  width: 100vw;
+  height: 100vh;
+}

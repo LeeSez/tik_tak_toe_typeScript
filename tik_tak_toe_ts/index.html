@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X O X</title>
+    <script type="module" src="src/main.ts"></script>
+    <link rel="styleSheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div id="topPanel">
+      <div class="x">
+        <div class="xBody xLeanLeft"></div>
+        <div class="xBody xLeanRight"></div>
+      </div>
+      <div class="o"></div>
+      <div class="x">
+        <div class="xBody xLeanLeft"></div>
+        <div class="xBody xLeanRight"></div>
+      </div>
+    </div>
+
+    <div id="mainContainer">
+      <!--<div id="divStartGame"><p id="pStartGame" onclick="startAnimation(0,20,15)">Start</p></div>-->
+      <div id="gameContainer">
+        <div id="blueP" class="player">
+          <div id="clearRect"></div>
+        </div>
+        <div id="redP" class="player"></div>
+      </div>
+      <p id="pReplayMessage">[ENTER] to play again</p>
+    </div>
+  </body>
+</html>
