@@ -1,4 +1,0 @@
-1. line 58
-2. line 148
-3. the size of the rain 
-4. the the gamecontianer should not go beyond the clear rect
